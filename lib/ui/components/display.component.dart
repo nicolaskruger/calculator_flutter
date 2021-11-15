@@ -1,3 +1,4 @@
+import 'package:calculadora/utils/color.utils.dart';
 import 'package:flutter/cupertino.dart';
 
 class Display extends StatelessWidget {
@@ -7,7 +8,13 @@ class Display extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(value),
+      padding: EdgeInsets.fromLTRB(0, 80, 0, 10),
+      alignment: Alignment.bottomRight,
+      child: Text(
+        value,
+        style: TextStyle(
+            color: ConstantColor.WHITE, decoration: TextDecoration.none),
+      ),
     );
   }
 }

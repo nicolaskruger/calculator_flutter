@@ -1,5 +1,6 @@
 import 'package:calculadora/ui/components/buttons/buttons.component.dart';
 import 'package:calculadora/ui/components/display.component.dart';
+import 'package:calculadora/utils/color.utils.dart';
 import 'package:flutter/cupertino.dart';
 
 class Calculator extends StatefulWidget {
@@ -21,6 +22,8 @@ class _CalculatorState extends State<Calculator> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: ConstantColor.BLACK,
+      padding: EdgeInsets.all(20),
       child: Column(
         children: [
           Display(value: value),
